@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  max-width: 1136px;
+  height: 640px;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* padding: 1rem; */
+  align-items: center; /* vertically center */
+}
+
+.container .left {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+}
+
+.left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* clip-path: polygon(0 0, 100% 0, calc(100% - 50vw) 100%, 0 100%); */
+}
+
+
+
+
+
+
+/* Clock Style */
+.datetime {
+  width: 340px;
+  color: #fff;
+  font-style: italic;
+  top: 200px;
+  left: 25px;
+  position: absolute;
+  transform: rotate(-47deg);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,255,255,.1));
+}
+
+.date {
+  margin-top: 50px;
+  margin-left: 250px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  margin-top: 40px;
+  margin-left: 350px;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-top: -20px;
+  padding: 0 15px;
+}
+
+
+
+
+
+.bar-1 {
+  top: -130px;
+  left: 210px;
+  position: absolute;
+  width: 4px;
+  height: 350px;
+  background-color: yellow;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.bar-2 {
+  top: 120px;
+  left: -5px;
+  position: absolute;
+  width: 4px;
+  height: 350px;
+  background-color: yellow;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.up {
+  /* Prof: Rotating image */
+  width: 100%;
+  height: 100%;
+  background: #0000ff;
+  /* clip-path: polygon(100% 0, 0 0, 100% 45%); */
+}
+
+.down {
+  /* Other time param */
+  width: 100%;
+  height: 100%;
+  background: #00ff00;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 300;
+  /* clip-path: polygon(100% 0, 5% 100%, 100% 100%); */
+}
