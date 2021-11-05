@@ -8,6 +8,7 @@ Digital Clock for mobile with a Cyberpunk 2077 theme
 ## Features
 
 - Use of CSS Grid.
+- Use of CSS Flexbox.
 - Use of Digital Clock.
 - Use of Text Rotate Animation.
 - Use of CSS Skew.
