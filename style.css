@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  max-width: 1136px;
-  height: 640px;
+  max-width: 568px;
+  height: 320px;
   background-color: skyblue;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -46,20 +46,20 @@ body {
   width: 100%;
   color: #fff;
   font-style: italic;
-  top: 100px;
+  top: 10px;
   /* left: 25px; */
   position: absolute;
-  transform: rotate(-47deg);
+  transform: rotate(-37deg);
 }
 
 .date {
   display: flex;
   justify-content: space-between;
   background: #000;
-  width: 60%;
-  margin-top: -50px;
-  margin-left: -50px;
-  font-size: 20px;
+  width: 70%;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 3px;
@@ -67,8 +67,8 @@ body {
 
 .time {
   width: 100%;
-  margin-top: 100px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 80px;
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -85,11 +85,11 @@ body {
 }
 
 .time span:last-child {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   text-transform: lowercase;
   margin-top: -20px;
-  margin-left: 20px;
+  margin-left: 8px;
   padding: 0 15px;
 }
 
@@ -100,25 +100,25 @@ body {
 
 
 .bar-1 {
-  top: -130px;
-  left: 210px;
+  top: -75px;
+  left: 215px;
   position: absolute;
   width: 4px;
-  height: 350px;
+  height: 230px;
   background-color: yellow;
   border-radius: 5px;
-  transform: rotate(45deg);
+  transform: rotate(53deg);
 }
 
 .bar-2 {
-  top: 120px;
-  left: -5px;
+  top: 145px;
+  left: 55px;
   position: absolute;
   width: 4px;
   height: 350px;
   background-color: yellow;
   border-radius: 5px;
-  transform: rotate(45deg);
+  transform: rotate(53deg);
 }
 
 .up {
@@ -139,4 +139,19 @@ body {
   font-size: 35px;
   font-weight: 300;
   /* clip-path: polygon(100% 0, 5% 100%, 100% 100%); */
+}
+
+
+#year {
+  width: 100%;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+.text {
+  color: yellowgreen;
+  font-size: 12px;
+  top: 305px;
+  left: 340px;
+  position: absolute;
 }
