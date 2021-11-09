@@ -19,6 +19,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   /* padding: 1rem; */
   align-items: center; /* vertically center */
+  overflow: hidden;
 }
 
 .container .left {
@@ -120,27 +121,6 @@ body {
   border-radius: 5px;
   transform: rotate(53deg);
 }
-
-.up {
-  /* Prof: Rotating image */
-  width: 100%;
-  height: 100%;
-  background: #0000ff;
-  /* clip-path: polygon(100% 0, 0 0, 100% 45%); */
-}
-
-.down {
-  /* Other time param */
-  width: 100%;
-  height: 100%;
-  background: #00ff00;
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: 35px;
-  font-weight: 300;
-  /* clip-path: polygon(100% 0, 5% 100%, 100% 100%); */
-}
-
 
 #year {
   width: 100%;
